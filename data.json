@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Song 1",
+        "path": "assets/sound/song1.mp3",
+        "artist": "Artist 1",
+        "cover": "assets/images/cover1.png"
+    },
+    {
+        "name": "Song 2",
+        "path": "assets/sound/song2.mp3",
+        "artist": "Artist 2",
+        "cover": "assets/images/cover2.png"
+    },
+    {
+        "name": "Song 3",
+        "path": "assets/sound/song3.mp3",
+        "artist": "Artist 3",
+        "cover": "assets/images/cover3.png"
+    },
+    {
+        "name": "Song 4",
+        "path": "assets/sound/song4.mp3",
+        "artist": "Artist 4",
+        "cover": "assets/images/cover4.png"
+    }
+]
