@@ -1,5 +1,6 @@
 :root {
     /*
+    Old, for informational purposes only
     * \#6F1EBA: ![purple](readme-rec/purple.png) Primary ACK Color
         * May be logo color in future
     * \#1DB954: ![green](readme-rec/green.png) Primary Spotify Color
@@ -62,24 +63,24 @@ html, body {
 }
 
 #bar-art {
+    grid-area: art;
     margin: 0;
     padding: 0;
     width: 100%;
 }
 
 #controls {
+    grid-area: controls;
     margin: auto;
 }
 
 .arrow-centering-container {
-    /* text-align: center; */
     grid-area: arrow;
     display: grid;
 }
 
 .arrow {
     filter: invert(1);
-    /* display: inline; */
     margin: auto;
 }
 
@@ -89,6 +90,21 @@ html, body {
 
 .arrow-down {
     rotate: 270deg;
+}
+
+#progress-container {
+    grid-area: progress;
+    width: 100%;
+    height: 4px;
+    margin: 0;
+    padding: 0;
+}
+
+#progress-indicator {
+    background-color: var(--primary);
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .bottom-nav {
