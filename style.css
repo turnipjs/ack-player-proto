@@ -33,12 +33,62 @@ html, body {
     padding: 2em;
 }
 
+#home {
+    
+}
+
+#library {
+
+}
+
+#search {
+
+}
+
+#settings {
+
+}
+
 #now-playing {
     background-color: var(--bg-highlight);
     width: 100%;
     height: 4em;
     position: fixed;
     bottom: 4em;
+    display: grid;
+    grid-template-areas: 'art controls arrow' 'progress progress progress';
+    grid-template-columns: 4em 1fr 4em;
+    grid-template-rows: 1fr 6px;
+}
+
+#bar-art {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#controls {
+    margin: auto;
+}
+
+.arrow-centering-container {
+    /* text-align: center; */
+    grid-area: arrow;
+    display: grid;
+}
+
+.arrow {
+    filter: invert(1);
+    /* display: inline; */
+    margin: auto;
+}
+
+.arrow-up {
+    rotate: 90deg;
+}
+
+.arrow-down {
+    rotate: 270deg;
 }
 
 .bottom-nav {
@@ -52,6 +102,13 @@ html, body {
     text-align: center;
 }
 
+.bottom-nav a {
+    text-decoration: none;
+}
+.bottom-nav button:hover {
+    cursor: pointer;
+}
+
 .bottom-nav button {
     display: inline;
     height: 100%;
@@ -59,7 +116,7 @@ html, body {
     padding: 0;
     margin: 0 1em;
     border: none;
-    background: var(--bg-base);
+    background: transparent;
     color: var(--text);
 }
 
@@ -72,22 +129,22 @@ html, body {
 }
 
 .carousel {
-  height: 100px;
-  width: 400px;
-  overflow: hidden;
-  background: blue;
-  /*   scroll-behavior: smooth; */
-  display: flex;
-  scroll-snap-type: x mandatory;
+    /* background: purple; */
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    /*   scroll-behavior: smooth; */
+    display: flex;
+    scroll-snap-type: x mandatory;
 }
 
 .carousel > div {
-  display: inline;
-  height: 100%;
-  width: 100%;
-  flex-shrink: 0;
+    display: inline;
+    height: 100%;
+    width: 100%;
+    flex-shrink: 0;
 }
 
 .carousel-content {
-  margin: 1em;
+    margin: 1em;
 }

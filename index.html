@@ -37,15 +37,45 @@
     </div>
 
     <div id="now-playing">
-        <h3>Now Playing</h3>
+        <img id="bar-art" src="" alt="album cover">
+
+        <div id="controls">
+            
+        </div>
+
+        <div class="arrow-centering-container">
+            <img id="player-toggle" class="arrow arrow-up" src="img/arrow.svg">
+        </div>
     </div>
 
     <nav class="bottom-nav">
-        <a><button><img src="img/home.svg">Home</button></a>
-        <a><button><img src="img/library.svg">Library</button></a>
-        <a><button><img src="img/search.svg">Search</button></a>
-        <a><button><img src="img/settings.svg">Settings</button></a>
+        <a href="#home">
+            <button>
+                <img src="img/home.svg" alt="home icon">
+                Home
+            </button>
+        </a>
+        <a href="#library">
+            <button>
+                <img src="img/library.svg" alt="library icon">
+                Library
+            </button>
+        </a>
+        <a href="#search">
+            <button>
+                <img src="img/search.svg" alt="search icon">
+                Search
+            </button>
+        </a>
+        <a href="#settings">
+            <button>
+                <img src="img/settings.svg" alt="settings icon">
+                Settings
+            </button>
+        </a>
     </nav>
+    
+    <script src="app.js"></script>
 </body>
 
 </html>
